@@ -1,0 +1,550 @@
+@media screen and (max-width: 480px) {
+  * {
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    color: #2e4070;
+  }
+  html {
+    background-color: white;
+  }
+  
+  .bg-grey {
+    background: #f7f9fa;
+  }
+  /* những element có class này sẽ có font-size là xx-small */
+  .xxsmall-text {
+    font-size: xx-small;
+  }
+  /* những element có class này sẽ có font-size là x-small */
+  .xsmall-text {
+    font-size: x-small;
+  }
+  /* những element có class này sẽ có font-size là small */
+  .small-text {
+    font-size: small;
+  }
+  /* những element có class này sẽ có font-size là medium */
+  .medium-text {
+    font-size: medium;
+  }
+  /* những element có class này sẽ có font-size là large */
+  .large-text {
+    font-size: large;
+  }
+  /* những element có class này sẽ có font-size là x-large */
+  .xlarge-text {
+    font-size: x-large;
+  }
+  /* những element có class này sẽ có font-size là xx-large */
+  .xxlarge-text {
+    font-size: xx-large;
+  }
+  /* những element có class này sẽ có font-weight là 800 */
+  .bold-text {
+    font-weight: 800;
+  }
+  /* những element có class này sẽ có font-weight là 600 */
+  .semi-bold-text {
+    font-weight: 600;
+  }
+  /* những element có class này sẽ có font-weight là 300 */
+  .semi-light-text {
+    font-weight: 300;
+  }
+  /* những element có class này sẽ có font-weight là 100 */
+  .light-text {
+    font-weight: 100;
+  }
+  /* selector cho các container  */
+  section > .container {
+    width: auto;
+    margin: auto;
+    display: block;
+    padding: 0 50px;
+  }
+  /* selector cho thanh nav */
+  #nav-bar {
+    text-align: center;
+  }
+  /* selector cho phần banner */
+  #banner {
+    position: relative;
+  }
+  /* selector cho ảnh banner */
+  #banner > img {
+    width: 100%;
+    height: auto;
+  }
+  /* selector cho container của chữ chèn trên banner */
+  banner-title {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 30%;
+    max-width: 700px;
+    min-width: 420px;
+    font-size: 200%;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  /* selector cho chữ chèn trên banner */
+  banner-title > * {
+    color: white;
+  }
+  /* selector cho phần nav */
+  #nav-bar > nav {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    
+    /* grid-template-columns: 100%;
+    grid-template-rows: repeat(4, auto);
+    grid-auto-flow: row !important; */
+    padding: 0 2px;
+    width: 40%;
+    font-size: 22px;
+  }
+  nav {
+    position: relative;
+  }
+  /* selector cho container phần ảnh đại diện */
+
+  /* selector cho phần div trong nav-title */
+  #nav-bar > div {
+    display: none;
+  }
+  /* selector cho ảnh đại diện */
+  #nav-bar > div > img {
+    width: 0;
+    height: auto;
+    border-radius: 50%;
+    border: 10px white solid;
+    filter: drop-shadow(0 0 2px black);
+  }
+ 
+  /* selector cho tất cả các link trong phần nav */
+  nav > * > a {
+    text-decoration: none;
+  }
+  /* selector cho tất cả các icon trong phần nav */
+  nav > *:not(nav-title) > div {
+    color: dodgerblue;
+  }
+  /* selector cho container cho phần thông tin cá nhân */
+  #about > div.container {
+    box-sizing: content-box;
+    padding: 40px 0;
+    width: 90% !important;
+    max-width: none;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 80px;
+  }
+  /* selector cho container của các link socials */
+  social-box {
+    width: 25%;
+    max-width: 200px;
+    min-width: 100px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1fr;
+  }
+  /* selector cho các link socials */
+  social-box > a {
+    text-decoration: none;
+    color: dodgerblue;
+  }
+  social-box > a:visited {
+    text-decoration: none;
+    color: dodgerblue;
+  }
+  social-box > a:active {
+    text-decoration: none;
+    color: dodgerblue;
+  }
+  /* selector cho phần mục tiêu */
+  #target {
+    padding-top: 30px;
+    margin-left: 0 !important;
+  }
+  /* selector cho thẻ h1 là child trong phần mục tiêu */
+  #target > h1 {
+    margin-bottom: 25px;
+    color: #464d50;
+  }
+  /* selector cho thẻ p là child trong phần mục tiêu */
+  #target > p {
+    color: #606974;
+  }
+  /* selector cho container phần thông tin cá nhân */
+  #personal-info {
+    padding-top: 50px;
+    align-self: center;
+    margin-left: 0;
+  }
+  /* selector cho các thẻ h1 trong phần thông tin cá nhân */
+  #personal-info > h1 {
+    margin-bottom: 25px;
+    color: #474b50;
+  }
+  /* selector cho các thẻ ul trong phần thông tin cá nhân */
+  #personal-info > ul {
+    list-style: none;
+    margin-bottom: 25px;
+    position: relative;
+    left: -40px;
+  }
+  /* selector cho các thẻ li là child của ul trong phần thông tin cá nhân */
+  #personal-info > ul > li {
+    color: #616a74;
+  }
+  /* selector cho container của phần thông tin nghề nghiệp */
+  #job-info {
+    display: grid;
+    grid-template-columns: 90%!important;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: auto;
+    color: #5b6372;
+    padding: 0;
+  }
+  /* selector cho class của các header trong phần thông tin nghề nghiệp */
+  .job-info-header {
+    align-self: center;
+    font-weight: 600;
+    font-size: xx-large;
+  }
+  /* selector cho các thẻ h3 là chắt của phần thông tin nghề nghiệp */
+  #job-info > * > * > h3 {
+    font-weight: 600;
+    font-size: x-large;
+    margin-bottom: 10px;
+  }
+  /* selector cho các thẻ p là chắt của phần thông tin nghề nghiệp */
+  #job-info > * > * > p {
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  /* selector cho các thẻ li là con của các thẻ ul chắt của phần thông tin nghề nghiệp */
+  #job-info > * > * > ul > li {
+    font-size: 18px;
+  }
+  /* tạo các chấm xanh trước mỗi phần content của #job-info */
+  .job-info-content::before {
+    content: "";
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    left: -20px;
+    top: 10px;
+    background-color: dodgerblue;
+    border-radius: 50%;
+  }
+  /* selector cho phần content của #job-info */
+  .job-info-content {
+    grid-column: 1 / -1;
+    width: 100%;
+    margin-top: 30px;
+    position: relative;
+    left: 20px;
+  }
+  /* selector cho các thẻ ul là con của content trong #job-info */
+  .job-info-content > ul {
+    margin-left: 13px;
+    padding: 0;
+    list-style-type: "- ";
+  }
+  /* selector cho các inline-grid 1, 2, 3 là thuộc #job-info */
+  /* .job-section-content {
+    display: inline-grid;
+    grid-template-columns: 3fr 1fr;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    padding: 10%;
+    padding-bottom: 80%;
+    border: solid 4px rgba(0, 17, 168, 0.02);
+  } */
+  /* selector cho các thẻ div là con của .job-section-content */
+  /* .job-section-content > div {
+    grid-column: 2;
+    grid-row: 1;
+    font-size: 60px;
+  } */
+  /* selector cho phần kinh nghiệm */
+  .experience {
+    grid-column: 1;
+  }
+  /* selector cho phần học vấn */
+  .education {
+    grid-column: auto;
+  }
+  /* selector cho phần hoạt động */
+  .activity {
+    grid-column: auto;
+  }
+  /* selector cho các inline-grid 4, 5 và 6 thuộc của #job-info */
+  /* .job-section-2-content {
+    display: inline-grid;
+    grid-template-columns: 3fr 1fr;
+    width: 100%;
+    max-width: 400px;
+    height: 400px;
+    padding: 10%;
+    padding-bottom: 40%;
+    border: solid 4px rgba(0, 17, 168, 0.02);
+  } */
+  /* selector cho các thẻ div là con của .job-section-2-content */
+  /* .job-section-2-content > div {
+    grid-column: 2;
+    grid-row: 1;
+    font-size: 60px;
+  } */
+  /* selector cho phần sở thích */
+  hobby-box {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    grid-column: 1/-1;
+  }
+  /* selector cho tất cả các child của hobby-box */
+  hobby-box > * {
+    margin: 0 auto;
+    width: 33%;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+  }
+  /* selector cho tất cả các thẻ p là cháu của hobby-box */
+  hobby-box > * > p {
+    font-size: 15px;
+  }
+  /* selector cho tất cả các thẻ div là cháu của hobby-box */
+  hobby-box > * > div {
+    font-size: 20px !important;
+    padding: 10px;
+    margin: 0 100% 10px;
+    border: solid 1px rgb(0, 110, 255);
+    color: rgb(82, 91, 117) !important;
+    border-radius: 50%;
+  }
+  /* selector cho container của các thanh màu trong 2 phần kỹ năng */
+  tiles-box {
+    display: block;
+    width: max-content;
+  }
+  /* selector cho tất cả các element nằm sau các thẻ div là con của .job-section-2-content */
+  .job-section-2-content > div + * {
+    margin-top: 40px;
+  }
+  /* selector cho tất cả con của .job-section-2-content mà không phải h1 hay div */
+  .job-section-2-content > *:not(div, h1) {
+    margin-bottom: 20px;
+    grid-column: 1/-1;
+  }
+  /* selector cho tất cả các thẻ div là cháu của .job-section-2-content */
+  .job-section-2-content > * > p {
+    font-size: 20px !important;
+  }
+  /* selector cho các thanh màu xanh hoặc xám trong 2 phần kỹ năng */
+  .tile {
+    display: inline-block;
+    margin-right: 10px;
+    width: 60px;
+    height: 3px;
+    border-radius: 25%;
+  }
+  /* những thanh màu có class này sẽ có màu xanh */
+  .blue-tile {
+    background-color: dodgerblue;
+  }
+  /* những thanh màu có class này sẽ có màu xám */
+  .gray-tile {
+    background-color: rgb(235, 242, 248);
+  }
+  /* selector cho các thẻ section */
+  section {
+    margin-top: 20px;
+  }
+  /* selector cho phần chữ của các giải thưởng */
+  c-a-content {
+    display: inline-flex;
+    flex-direction: column;
+  }
+  /* selector cho container của phần giải thưởng */
+  certificate-grid {
+    margin: 20px 0 0;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+  /* selector cho các element trong phần giải thưởng */
+  certificate-grid > * {
+    margin: 30px 20px 0;
+    padding-left: 0;
+    flex-direction: column;
+    align-items: center;
+  }
+  /* selector cho giải thưởng 2 */
+  c-a-2 {
+    border-left: 0;
+    border-bottom:  1px solid #d6c08d;
+  }
+  /* selector cho giải thưởng 1 */
+  c-a-1 {
+    border-bottom: 1px solid #d6c08d;
+  }
+  c-a-3 {
+    margin-left: 0 !important;
+  }
+  /* selector cho các thẻ h1 là con của #certificate hoặc con của #project */
+  #certificate > h1,
+  #project > h1 {
+    font-size: 35px;
+    margin: 0;
+    min-width: none;
+    padding-top: 20px;
+  }
+  /* selector cho tất cả các con của chắt của #certificate mà không phải là img */
+  #certificate > * > * > * > *:not(img) {
+    height: fit-content;
+  }
+  /* selector cho tất cả các element là cháu của #certificate */
+  #certificate > * > * {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /* selector cho tất cả các thẻ img là chắt của #certificate */
+  #certificate > * > * > img {
+    width: 80vw;
+  }
+  /* selector cho các thẻ p là child đầu tiên của phần chữ trong c-a-content */
+  c-a-content > p:first-child {
+    font-size: 17px;
+    text-transform: uppercase;
+    margin-left: 23px;
+  }
+  /* selector cho các thẻ li là cháu của c-a-content */
+  c-a-content > ul > li {
+    color: #808c99;
+    list-style-type: "- ";
+    font-size: 10px;
+  }
+  /* selector cho các chữ đầu tiên của các thẻ li là cháu của c-a-content */
+  c-a-content > ul > li::first-letter {
+    text-transform: capitalize;
+  }
+  /* selector cho container của phần dự án */
+  project-grid {
+    display: grid;
+    grid-template-columns:95%;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    max-width: auto;
+    margin: 20px auto;
+  }
+  /* selector cho các dự án  */
+  .project {
+    display: inline-grid;
+    grid-template-columns: 1fr;
+    height: auto;
+    margin-top: 30px;
+    border: solid 4px rgba(0, 17, 168, 0.02);
+    row-gap: 2px;
+    background-color: rgba(0, 17, 168, 0.02);
+  }
+  /* selector cho các thẻ img là con của các dự án */
+  .project > img {
+    width: 100%;
+    margin: 0;
+  }
+  /* selector cho tất cả child của .project */
+  .project > * {
+    background-color: white;
+  }
+  /* selector cho các thẻ h3 là con của các dự án */
+  .project > h3 {
+    padding: 20px 0;
+    padding-left: 15px;
+    font-size: 22px;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+  /* selector cho các thẻ div là con của các dự án */
+  .project > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding: 10px 0 !important;
+  }
+  /* selector cho các thẻ div là cháu của các dự án */
+  .project > div > div {
+    margin-left: 18px;
+    font-size: 22px;
+  }
+  /* selector cho các thẻ p là con của các thẻ div và là cháu của các dự án */
+  .project > div > p {
+    margin-left: 5px;
+    font-size: 17px;
+    text-transform: uppercase;
+  }
+  /* selector cho thẻ p là child đầu tiên của các thẻ div và là cháu của các dự án */
+  .project > div > p:first-child {
+    background-color: dodgerblue;
+    color: white;
+    border-radius: 2em;
+    margin-left: 15px;
+    padding: 10px;
+    width: auto;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 600;
+  }
+  /* selector cho các thẻ td là child đầu tiên của thẻ mẹ */
+  td:first-child {
+    width: 20% !important;
+    text-transform: capitalize;
+  }
+  /* selector cho tất cả các thẻ td */
+  td {
+    font-size: 18px;
+    width: 40%;
+    vertical-align: top;
+    padding-top: 15px;
+  }
+  /* selector cho phần footer */
+  #footer {
+    display: flex;
+    justify-content: center;
+    padding: 40px 20%;
+    gap: 40px;
+  }
+  /* selector cho tất cả các thẻ div là con của #footer */
+  #footer > div {
+    display: inline-flex;
+    gap: 10px;
+    vertical-align: middle;
+  }
+  /* selector cho tất cả các thẻ div là con của các thẻ div mẹ và là cháu của #footer */
+  #footer > div > div {
+    font-size: 30px;
+    color: dodgerblue;
+  }
+  /* selector cho tất cả các thẻ a có link là con của các thẻ div và là cháu của #footer */
+  #footer > div > a:link {
+    text-decoration: none;
+  }
+  
+}
