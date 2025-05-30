@@ -1,0 +1,21 @@
+.navbar-nav > * {
+  margin-right: 20px;
+}
+.carousel-item > img {
+  height: 90vh;
+}
+#caritem1 > .carousel-caption {
+  position: relative !important;
+  left: -15vw !important;
+  bottom: 34vh !important;
+}
+#caritem2 > .carousel-caption {
+  position: relative !important;
+  left: 15vw !important;
+  bottom: 64vh !important;
+}
+#caritem3 > .carousel-caption {
+  position: relative !important;
+  bottom: 50vh !important;
+  left: 0;
+}
