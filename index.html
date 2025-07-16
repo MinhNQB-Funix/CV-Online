@@ -85,6 +85,7 @@
             
           </div>
           <div id="personal-info-auth-open" class="medium-text">
+            <button class="defButton" id="hidePersonalInfo">Hide</button>
             <ul class="mt-40 info">
               <li><span>Giới tính</span> : Nam</li>
               <li><span>Ngày sinh</span> : 29/06/2009</li>
@@ -127,15 +128,16 @@
       </div>
     </div>
     </section>
-    <button Id="extendButton">Extend Cards</button>
+
     <section id="job-info">
-      <div style="margin-top: 20px" class="experience job-section-content jobCard">
-        <div class="cardheader">
+      <div  class="experience job-section-content jobCard">
+        <div class="cardheader" id="jobcardheader">
           <h1 class="job-info-header">Kinh nghiệm</h1>
           <div class="fa fa-briefcase"></div>
         </div>
+        <button class="extendButton" id="jobcardbutton">Extend</button>
         <!-- thẻ experience-1 là container cho phần kinh nghiệm số 1 -->
-        <div class="cardcontent">
+        <div class="cardcontent" id="jobcardcontent">
         <experience-1 class="job-info-content">
           <h3>Tiểu Học</h3>
           <p><em>09/2015 - 06/2020</em></p>
@@ -161,13 +163,13 @@
         </experience-2>
         </div>
       </div>
-      
-      <div style="margin-top: 20px" class="education job-section-content jobCard">
-        <div class="cardheader">
+      <div class="education job-section-content jobCard">
+        <div class="cardheader" id="jobcardheader2">
         <h1 class="job-info-header">Học vấn</h1>
         <div class="fa icon-heartbeat"></div>
       </div>
-      <div class="cardcontent">
+      <button class="extendButton" id="jobcardbutton2">Extend</button>
+      <div class="cardcontent" id="jobcardcontent2">
         <!-- thẻ education-1 là container cho phần học vấn số 1 -->
         <education-1 class="job-info-content">
           <h3>Mẫu giáo</h3>
@@ -203,12 +205,14 @@
         </education-3>
       </div>
       </div>
-      <div style="margin-top: 20px" class="activity job-section-content jobCard">
-        <div class="cardheader">
-        <h1 class="job-info-header">Hoạt động</h1>
-        <div class="fa fa-shower"></div></div>
+      <div class="activity job-section-content jobCard">
+        <div class="cardheader" id="jobcardheader3">
+          <h1 class="job-info-header">Hoạt động</h1>
+          <div class="fa fa-shower"></div>
+        </div>
+        <button class="extendButton" id="jobcardbutton3">Extend</button>
         <!-- thẻ activity-1 là container cho phần hoạt động số 1 -->
-         <div class="cardcontent">
+         <div class="cardcontent" id="jobcardcontent3">
         <activity-1 class="job-info-content">
           <h3>Tiểu học Thái Thịnh</h3>
           <p>09/2015 - 06/2020</p>
@@ -221,23 +225,24 @@
           <p>- Sao đỏ tạm thời cho lớp A3</p>
         </activity-2>
       </div></div>
-      <div style="margin-top: 20px" class="hobby job-section-2-content jobCard">
-        <div class="cardheader">
+      <div class="hobby job-section-content jobCard">
+        <div class="cardheader" id="jobcardheader4">
         <h1 class="job-info-header">Sở thích</h1>
         <div class="fa icon-sun-3"></div>
       </div>
-      <div class="cardcontent">
+      <button class="extendButton" id="jobcardbutton4">Extend</button>
+      <div class="cardcontent" id="jobcardcontent4">
         <!-- hobby-box là container cho phần sở thích -->
         <hobby-box>
           <!-- sleeping-box là container cho phần sở thích số 1 -->
           <sleeping-box>
             <div class="fa fa-bed"></div>
-            <p>âm Nhạc</p>
+            <p>Âm Nhạc</p>
           </sleeping-box>
           <!-- gaming-box là container cho phần sở thích số 2 -->
           <gaming-box>
             <div class="fa fa-gamepad"></div>
-            <p>Lam Game</p>
+            <p>Làm Game</p>
           </gaming-box>
           <!-- reading-box là container cho phần sở thích số 3 -->
           <reading-box>
@@ -248,12 +253,13 @@
         </hobby-box>
       </div>
       </div>
-      <div style="margin-top: 20px" class="language job-section-2-content jobCard">
-        <div class="cardheader">
+      <div class="language job-section-content jobCard">
+        <div class="cardheader" id="jobcardheader5">
         <h1 class="job-info-header">Ngôn ngữ</h1>
         <div class="fa fa-globe"></div></div>
+        <button class="extendButton" id="jobcardbutton5">Extend</button>
         <!-- thẻ english-box là container cho phần năng lực tiếng Anh -->
-         <div class="cardcontent">
+        <div class="cardcontent" id="jobcardcontent5">
         <english-box>
           <p>Tiếng Anh: Intermediate</p>
           <!-- thẻ tiles-box là container cho phần các thanh màu xanh và xám -->
@@ -288,12 +294,13 @@
           </tiles-box>
         </chinese-box></div>
       </div>
-      <div style="margin-top: 20px" class="job-section-2-content jobCard">
-        <div class="cardheader">
+      <div class="skill job-section-content jobCard">
+        <div class="cardheader" id="jobcardheader6">
         <h1 class="job-info-header">Kỹ năng</h1>
         <div class="fa fa-wheelchair"></div>
       </div>
-      <div class="cardcontent">
+      <button class="extendButton" id="jobcardbutton6">Extend</button>
+      <div class="cardcontent" id="jobcardcontent6">
         <!-- thẻ html-box là container cho phần năng lực tiếng html -->
 
         <html-box>

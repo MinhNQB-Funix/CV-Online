@@ -3,6 +3,7 @@ const regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\
 const info = document.getElementById('personal-info-auth-open');
 const emailForm = document.getElementById('emailCheck');
 const auth = document.getElementById('personal-info-auth-locked')
+const hideButtonPI = document.getElementById('hidePersonalInfo')
 
 info.classList.add('hide');
 
@@ -17,22 +18,151 @@ emailForm.addEventListener('submit', (placeholder) => {
     }
 });
 
-let extension = 1;
-const extendButton = document.getElementById('extendButton');
-const cardsContent = document.querySelectorAll('.cardcontent');
+hideButtonPI.addEventListener('click', () => {
+        info.classList.add('hide')
+        auth.classList.remove('hide')
+    });
 
+//
+
+const cardsContent = document.querySelectorAll('.cardcontent');
 cardsContent.forEach(param => param.classList.add('hide'));
-extendButton.addEventListener('click', () => {
-    console.log("a")
-    if(extension) {
-        cardsContent.forEach(param => param.classList.remove('hide'));
-        extendButton.textContent = "Collapse Cards"
-        extension = 0
+const extendButtons = document.querySelectorAll('.extendButton');
+extendButtons.forEach(param => param.classList.add('trans'));
+
+
+let jobextension = 1;
+const jobcardbutton = document.getElementById('jobcardbutton');
+const jobcontent = document.getElementById('jobcardcontent')
+
+jobcardbutton.addEventListener('click', () => {
+    // console.log("a")
+    if(jobextension) {
+        jobcontent.classList.remove('hide');
+        jobcardbutton.textContent = "Collapse"
+        jobextension = 0
     } else {
-        cardsContent.forEach(param => param.classList.add('hide'));
-        extendButton.textContent = "Extend Cards"
-        extension = 1
+        jobcontent.classList.add('hide');
+        jobcardbutton.textContent = "Extend"
+        jobextension = 1
     }
 })
+const jobcardarea = document.querySelector('.experience')
 
+jobcardarea.addEventListener('mouseenter', () => jobcardbutton.classList.remove('trans'))
+jobcardarea.addEventListener('mouseleave', () => jobcardbutton.classList.add('trans'))
 
+//
+
+let jobextension2 = 1;
+const jobcardbutton2 = document.getElementById('jobcardbutton2');
+const jobcontent2 = document.getElementById('jobcardcontent2')
+
+jobcardbutton2.addEventListener('click', () => {
+    // console.log("a")
+    if(jobextension2) {
+        jobcontent2.classList.remove('hide');
+        jobcardbutton2.textContent = "Collapse"
+        jobextension2 = 0
+    } else {
+        jobcontent2.classList.add('hide');
+        jobcardbutton2.textContent = "Extend"
+        jobextension2 = 1
+    }
+})
+const jobcardarea2 = document.querySelector('.education')
+
+jobcardarea2.addEventListener('mouseenter', () => jobcardbutton2.classList.remove('trans'))
+jobcardarea2.addEventListener('mouseleave', () => jobcardbutton2.classList.add('trans'))
+
+//
+
+let jobextension3 = 1;
+const jobcardbutton3 = document.getElementById('jobcardbutton3');
+const jobcontent3 = document.getElementById('jobcardcontent3')
+
+jobcardbutton3.addEventListener('click', () => {
+    // console.log("a")
+    if(jobextension3) {
+        jobcontent3.classList.remove('hide');
+        jobcardbutton3.textContent = "Collapse"
+        jobextension3 = 0
+    } else {
+        jobcontent3.classList.add('hide');
+        jobcardbutton3.textContent = "Extend"
+        jobextension3 = 1
+    }
+})
+const jobcardarea3 = document.querySelector('.activity')
+
+jobcardarea3.addEventListener('mouseenter', () => jobcardbutton3.classList.remove('trans'))
+jobcardarea3.addEventListener('mouseleave', () => jobcardbutton3.classList.add('trans'))
+
+//
+
+let jobextension4 = 1;
+const jobcardbutton4 = document.getElementById('jobcardbutton4');
+const jobcontent4 = document.getElementById('jobcardcontent4')
+
+jobcardbutton4.addEventListener('click', () => {
+    // console.log("a")
+    if(jobextension4) {
+        jobcontent4.classList.remove('hide');
+        jobcardbutton4.textContent = "Collapse"
+        jobextension4 = 0
+    } else {
+        jobcontent4.classList.add('hide');
+        jobcardbutton4.textContent = "Extend"
+        jobextension4 = 1
+    }
+})
+const jobcardarea4 = document.querySelector('.hobby')
+
+jobcardarea4.addEventListener('mouseenter', () => jobcardbutton4.classList.remove('trans'))
+jobcardarea4.addEventListener('mouseleave', () => jobcardbutton4.classList.add('trans'))
+
+//
+
+let jobextension5 = 1;
+const jobcardbutton5 = document.getElementById('jobcardbutton5');
+const jobcontent5 = document.getElementById('jobcardcontent5')
+
+jobcardbutton5.addEventListener('click', () => {
+    // console.log("a")
+    if(jobextension5) {
+        jobcontent5.classList.remove('hide');
+        jobcardbutton5.textContent = "Collapse"
+        jobextension5 = 0
+    } else {
+        jobcontent5.classList.add('hide');
+        jobcardbutton5.textContent = "Extend"
+        jobextension5 = 1
+    }
+})
+const jobcardarea5 = document.querySelector('.language')
+
+jobcardarea5.addEventListener('mouseenter', () => jobcardbutton5.classList.remove('trans'))
+jobcardarea5.addEventListener('mouseleave', () => jobcardbutton5.classList.add('trans'))
+
+//
+
+let jobextension6 = 1;
+const jobcardbutton6 = document.getElementById('jobcardbutton6');
+const jobcontent6 = document.getElementById('jobcardcontent6')
+
+jobcardbutton6.addEventListener('click', () => {
+    // console.log("a")
+    if(jobextension6) {
+        jobcontent6.classList.remove('hide');
+        jobcardbutton6.textContent = "Collapse"
+        jobextension6 = 0
+    } else {
+        jobcontent6.classList.add('hide');
+        jobcardbutton6.textContent = "Extend"
+        jobextension6 = 1
+    }
+})
+const jobcardarea6 = document.querySelector('.skill')
+
+jobcardarea6.addEventListener('mouseenter', () => jobcardbutton6.classList.remove('trans'))
+jobcardarea6.addEventListener('mouseleave', () => jobcardbutton6.classList.add('trans'))

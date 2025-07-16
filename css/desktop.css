@@ -18,6 +18,9 @@ input[type=email]{
 .hide {
   display: none !important; 
 }
+.trans {
+  opacity: 0;
+}
 #personal-info-auth-locked > p {
   margin: 0;
   color: lightgrey; 
@@ -38,7 +41,7 @@ input[type=email]{
   translate: 0 -1px;
 }
 
-#extendButton:hover{
+.extendButton:hover{
   background-color: rgb(24, 127, 245);
   translate: 0 -1px;
 }
@@ -238,6 +241,11 @@ social-box > a:active {
 #personal-info > ul > li {
   color: #616a74;
 }
+#hidePersonalInfo {
+  margin-bottom: 15px;
+  font-size: 0.8em;
+  background-color: #b0b5c4;
+}
 /* selector cho container của phần thông tin nghề nghiệp */
 #job-info {
   display: grid;
@@ -247,6 +255,7 @@ social-box > a:active {
   justify-content: center;
   max-width: 1200px;
   margin: auto;
+  margin-top: 20px;
   color: #5b6372;
   padding: 0;
 }
@@ -308,20 +317,19 @@ social-box > a:active {
   border: solid 4px rgba(0, 17, 168, 0.02);
 }
 /* selector cho các thẻ div là con của .job-section-content */
-#extendButton {
+.extendButton {
   background-color: dodgerblue;
   color: white;
   border: 0;
+  font-weight: 00;
   border-radius: 1em;
   padding: 0.3em 1em;
-  margin: 20px 46.7% 0;
-  font-size: 0.9em;
+  font-size: 1em;
 }
 .cardheader {
   display: flex;
   justify-content: space-around;
   font-size: 60px;
-  margin-bottom: 20px;
 }
 .cardcontent {
   margin-top: 20px
