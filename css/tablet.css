@@ -207,9 +207,6 @@
     align-items: center;
     justify-content: center;
     max-width: 1200px;
-    margin: auto;
-    color: #5b6372;
-    padding: 0;
   }
   /* selector cho class của các header trong phần thông tin nghề nghiệp */
   .job-info-header {

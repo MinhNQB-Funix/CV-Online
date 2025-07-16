@@ -1,5 +1,6 @@
 const regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
+//tính năng nhập email & hiện thông tin cá nhân
 const info = document.getElementById('personal-info-auth-open');
 const emailForm = document.getElementById('emailCheck');
 const auth = document.getElementById('personal-info-auth-locked')
@@ -18,18 +19,20 @@ emailForm.addEventListener('submit', (placeholder) => {
     }
 });
 
+//nút ẩn thông tin cá nhân
 hideButtonPI.addEventListener('click', () => {
         info.classList.add('hide')
         auth.classList.remove('hide')
     });
 
-//
+//ẩn các phần cần thiết trong phần thông tin nghề nghiệp
 
 const cardsContent = document.querySelectorAll('.cardcontent');
 cardsContent.forEach(param => param.classList.add('hide'));
 const extendButtons = document.querySelectorAll('.extendButton');
 extendButtons.forEach(param => param.classList.add('trans'));
 
+//chức năng của phần kinh nghiệm
 
 let jobextension = 1;
 const jobcardbutton = document.getElementById('jobcardbutton');
@@ -52,7 +55,7 @@ const jobcardarea = document.querySelector('.experience')
 jobcardarea.addEventListener('mouseenter', () => jobcardbutton.classList.remove('trans'))
 jobcardarea.addEventListener('mouseleave', () => jobcardbutton.classList.add('trans'))
 
-//
+//chức năng của phần học vấn
 
 let jobextension2 = 1;
 const jobcardbutton2 = document.getElementById('jobcardbutton2');
@@ -75,7 +78,7 @@ const jobcardarea2 = document.querySelector('.education')
 jobcardarea2.addEventListener('mouseenter', () => jobcardbutton2.classList.remove('trans'))
 jobcardarea2.addEventListener('mouseleave', () => jobcardbutton2.classList.add('trans'))
 
-//
+//chức năng của phần hoạt động
 
 let jobextension3 = 1;
 const jobcardbutton3 = document.getElementById('jobcardbutton3');
@@ -98,7 +101,7 @@ const jobcardarea3 = document.querySelector('.activity')
 jobcardarea3.addEventListener('mouseenter', () => jobcardbutton3.classList.remove('trans'))
 jobcardarea3.addEventListener('mouseleave', () => jobcardbutton3.classList.add('trans'))
 
-//
+//chức năng của phần sở thích
 
 let jobextension4 = 1;
 const jobcardbutton4 = document.getElementById('jobcardbutton4');
@@ -121,7 +124,7 @@ const jobcardarea4 = document.querySelector('.hobby')
 jobcardarea4.addEventListener('mouseenter', () => jobcardbutton4.classList.remove('trans'))
 jobcardarea4.addEventListener('mouseleave', () => jobcardbutton4.classList.add('trans'))
 
-//
+//chức năng của phần ngôn ngữ
 
 let jobextension5 = 1;
 const jobcardbutton5 = document.getElementById('jobcardbutton5');
@@ -144,7 +147,7 @@ const jobcardarea5 = document.querySelector('.language')
 jobcardarea5.addEventListener('mouseenter', () => jobcardbutton5.classList.remove('trans'))
 jobcardarea5.addEventListener('mouseleave', () => jobcardbutton5.classList.add('trans'))
 
-//
+//chức năng của phần kỹ năng
 
 let jobextension6 = 1;
 const jobcardbutton6 = document.getElementById('jobcardbutton6');
